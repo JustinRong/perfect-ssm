@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>perfect-ssm - 登录</title>
+    <title>CI&SS - 登录</title>
     <meta name="keywords" content="perfect-ssm">
     <meta name="description" content="perfect-ssm">
 
@@ -35,7 +35,7 @@
             <h1 class="logo-name">13</h1>
 
         </div>
-        <h3>欢迎使用 perfect-ssm</h3>
+        <h3>欢迎使用 汽车检查销售系统CI&SS</h3>
 
         <form class="m-t" role="form" id="adminlogin" method="post"
               name="adminlogin" onsubmit="return false" action="##">

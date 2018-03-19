@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>perfect-ssm系统主页</title>
+    <title>CI&SS系统主页</title>
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath}/jquery-easyui-1.3.3/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css"
@@ -69,11 +69,8 @@
 <div region="center">
     <div class="easyui-tabs" fit="true" border="false" id="tabs">
         <div title="首页" data-options="iconCls:'icon-home'">
-            <div align="center" style="padding-top: 20px;"><a href="https://github.com/ZHENFENG13/perfect-ssm"
-                                                              target="_blank"
-                                                              style="font-size: 20px;">github地址</a></div>
             <div align="center" style="padding-top: 50px">
-                <font color="grey" size="10">perfect ssm</font>
+                <font color="grey" size="10">CI&SS</font>
             </div>
         </div>
     </div>
