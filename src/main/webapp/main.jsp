@@ -82,15 +82,20 @@
              data-options="selected:true,iconCls:'icon-wenzhangs'"
              style="padding: 10px;height:10px;">
             <a
-                    href="javascript:openTab(' 文章管理-ue','articleManage-ue.jsp','icon-wenzhang')"
+                    href="javascript:openTab(' 汽车入库管理','articleManage-ue.jsp','icon-wenzhang')"
                     class="easyui-linkbutton"
                     data-options="plain:true,iconCls:'icon-wenzhang'"
-                    style="width: 150px;"> UEditor</a>
+                    style="width: 150px;"> 入库管理</a>
             <a
-                    href="javascript:openTab(' 文章管理-ke','articleManage-ke.jsp','icon-wenzhang')"
+                    href="javascript:openTab(' 汽车订单管理','articleManage-ke.jsp','icon-wenzhang')"
                     class="easyui-linkbutton"
                     data-options="plain:true,iconCls:'icon-wenzhang'"
-                    style="width: 150px;"> kindEditor(推荐)</a>
+                    style="width: 150px;"> 订单管理</a>
+            <a
+                    href="javascript:openTab(' 汽车订单管理','selectCars.jsp','icon-wenzhang')"
+                    class="easyui-linkbutton"
+                    data-options="plain:true,iconCls:'icon-wenzhang'"
+                    style="width: 150px;"> 订单管理</a>
         </div>
         <div title="图片管理" data-options="iconCls:'icon-shouye'"
              style="padding:10px">
@@ -105,7 +110,8 @@
             <a href="javascript:openTab(' 管理员列表','userManage.jsp','icon-lxr')"
                class="easyui-linkbutton"
                data-options="plain:true,iconCls:'icon-lxr'" style="width: 150px;">
-                管理员列表</a><a href="javascript:logout()"
+                管理员列表</a>
+            <a href="javascript:logout()"
                             class="easyui-linkbutton"
                             data-options="plain:true,iconCls:'icon-exit'"
                             style="width: 150px;">
