@@ -176,20 +176,22 @@ public class CarsController {
         return ResultGenerator.genSuccessResult();
     }
 
-    *//**
+    **/
+
+    /**
      * 根据id查找
-     *
      * @param id
      * @return
      * @throws Exception
-     *//*
+     */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody
     public Result findById(@PathVariable("id") String id) throws Exception {
-        Article article = articleService.findById(id);
+        //todo 需要将表改为明细表
+        Cars cars = carsService.findById(id);
         Result result = ResultGenerator.genSuccessResult();
-        result.setData(article);
-        log.info("request: article/findById");
+        result.setData(cars);
+        log.info("request: cars/findById");
         return result;
-    }*/
+    }
 }

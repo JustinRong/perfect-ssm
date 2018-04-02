@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>article</title>
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/jquery-easyui-1.3.3/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/jquery-easyui-1.3.3/themes/icon.css">
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/jquery.easyui.min.js"></script>
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/ueditor/ueditor.all.min.js"></script>
+</head>
+<body>
+<div class="cars" style="">
+
+</div>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    function getQueryStringByName(name) {
+        var result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+        if (result == null || result.length < 1) {
+            return "";
+        }
+        return result[1];
+    }
+
+    window.onload = function () {
+        var id = getQueryStringByName("id");
+        if (id == null) {
+            alert("无数据!");
+            return;
+        }
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/cars/' + id,
+            data: {},
+            success: function (data) {
+                if (data != null) {
+                    $('.cars').html(data.data.articleContent);
+                    //console.log(data.articleContent);
+                }
+                else {
+                    alert("无数据!");
+                }
+            }
+        });
+    }
+</script>
+</html>

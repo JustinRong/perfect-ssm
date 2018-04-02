@@ -26,8 +26,8 @@
        url="${pageContext.request.contextPath}/cars/carid" toolbar="#tb">
     <thead data-options="frozen:true">
     <tr>
-        <th field="cb" checkbox="true" align="center"></th>
-        <th field="carid" width="10%" align="center" hidden="true">编号</th>
+        <th field="cb" checkbox="true" align="cen.ter"></th>
+        <th field="carId" width="10%" align="center" hidden="true">编号</th>
         <th field="carName" width="200" align="center">品牌</th>
         <th field="content" width="70" align="center"
             formatter="formatHref">操作
@@ -222,7 +222,7 @@
     }
 
     function formatHref(val, row) {
-        return "<a href='${pageContext.request.contextPath}/article.html?id=" + row.id + "' target='_blank'>入库</a>";
+        return "<a href='${pageContext.request.contextPath}/cars.html?id=" + row.carId + "' target='_blank'>入库</a>";
     }
 
     function resetValue() {
